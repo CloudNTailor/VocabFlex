@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "vocabflex",
+    "name": "VocabFlex",
     "slug": "vocabflex",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,15 +11,27 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#EFF2F1",
+        "foregroundImage": "./assets/android-icon-foreground.png"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-asset",
+      "expo-audio",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#EFF2F1"
+        }
+      ]
+    ]
   }
 }
